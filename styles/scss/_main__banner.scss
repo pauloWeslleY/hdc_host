@@ -1,0 +1,32 @@
+@use "colors";
+
+/*
+	<|=== ===|>
+	! TODO: Main Banner
+	<|=== ===|>
+*/
+
+.main__banner {
+	background-image: url("../../assets/mainbanner.png");
+	background-size: cover;
+	background-position: center;
+	padding: 10em 0;
+	position: relative;
+
+	text-align: center;
+
+	h1 {
+		font-size: 54px;
+		margin-bottom: 3rem;
+	}
+
+	p {
+		font-size: 32px;
+	}
+
+	h1,
+	p {
+		font-weight: 700;
+		color: colors.$white;
+	}
+}
