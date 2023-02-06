@@ -1,0 +1,90 @@
+@use "colors";
+
+/*
+	<|=== ===|>
+	! TODO: Prices
+	<|=== ===|>
+*/
+
+.pricing__container {
+	padding-bottom: 5em;
+	text-align: center;
+
+	h1 {
+		font-size: 36px;
+		margin-top: 0;
+	}
+
+	p {
+		font-size: 20px;
+	}
+
+	.hero__plans_box {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 50px;
+		width: 90%;
+		position: relative;
+		margin-inline: auto;
+
+		.plan__box {
+			flex: 1 1 200px;
+			max-width: 275px;
+			margin-inline: 20px;
+
+			ul {
+				padding: 0;
+
+				.price {
+					width: 120px;
+					height: 120px;
+					border-radius: 50%;
+					background-color: colors.$green-200;
+					color: colors.$white;
+					text-align: center;
+					line-height: 120px;
+
+					font-size: 18px;
+					position: relative;
+					margin-inline: auto;
+					margin-bottom: -50px;
+				}
+
+				.plan__name {
+					text-transform: uppercase;
+
+					color: colors.$white;
+					background-color: colors.$gray-600;
+
+					font-size: 20px;
+					font-weight: bold;
+
+					padding-top: 50px;
+					padding-bottom: 20px;
+				}
+
+				.plan__btn {
+					background-color: colors.$green-200;
+					color: colors.$white;
+
+					font-size: 24px;
+
+					height: 75px;
+					line-height: 75px;
+					cursor: pointer;
+				}
+
+				.recommended {
+					background-color: colors.$red-100;
+				}
+
+				li {
+					height: 50px;
+					line-height: 50px;
+					background-color: colors.$gray-200;
+					color: colors.$gray-400;
+				}
+			}
+		}
+	}
+}

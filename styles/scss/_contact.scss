@@ -1,0 +1,55 @@
+@use "colors";
+
+/*
+	<|=== ===|>
+	! TODO: Contact
+	<|=== ===|>
+*/
+
+.contact__container {
+	text-align: center;
+	padding-top: 5em;
+	padding-bottom: 2em;
+
+	h2 {
+		font-size: 35px;
+	}
+
+	p {
+		font-size: 20px;
+		margin-bottom: 40px;
+	}
+
+	textarea,
+	input {
+		width: 200px;
+		padding: 10px 20px;
+		font-size: 16px;
+		border-radius: 5px;
+		border: 1px solid colors.$gray-100;
+
+		margin-inline: 10px;
+		margin-bottom: 20px;
+	}
+
+	textarea {
+		display: block;
+		position: relative;
+
+		margin-inline: auto;
+		width: 468px;
+		height: 150px;
+	}
+
+	input[type="submit"] {
+		display: block;
+		position: relative;
+
+		margin-inline: auto;
+
+		background-color: colors.$green-300;
+		color: colors.$white;
+
+		cursor: pointer;
+	}
+}
