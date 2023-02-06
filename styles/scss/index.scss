@@ -1,7 +1,6 @@
 @use "global";
 
 * {
-	// box-sizing: border-box;
 	padding: 0;
 	margin: 0;
 	text-decoration: none;
@@ -20,4 +19,77 @@ h3 {
 
 p {
 	color: global.$gray-300;
+}
+
+/*
+	<|=== ===|>
+	! TODO: Media Queries
+	<|=== ===|>
+*/
+
+@media screen and (max-width: 1100px) {
+	.pricing__container {
+		.hero__plans_box {
+			width: 95%;
+
+			.plan__box {
+				margin-inline: 5px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.hero__plans_box,
+	.specialties__container ul {
+		flex-wrap: wrap;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	html,
+	body {
+		overflow-x: hidden;
+	}
+
+	.navbar__items li {
+		font-size: 12px;
+		margin-left: 10px;
+	}
+
+	.pricing__container {
+		.hero__plans_box {
+			.plan__box {
+				width: 100%;
+				max-width: 100%;
+
+				margin-bottom: 5px;
+			}
+		}
+	}
+
+	.contact__container,
+	.search_domain__container {
+		padding: 3em 2em;
+	}
+
+	.contact__container {
+		input,
+		textarea {
+			width: 100%;
+			display: block;
+
+			margin-inline: 0;
+			box-sizing: border-box;
+		}
+	}
+
+	.container {
+		.search_domain__container {
+			input {
+				width: 100%;
+				box-sizing: border-box;
+			}
+		}
+	}
 }
